@@ -1,10 +1,12 @@
 import './App.css';
-import Test from './components/Test';
+import Dog from './components/Dog';
+// import Employee from './components/Employee';
 
 function App() {
   return (
     <div className="App">
-      <Test />
+      {/* <Employee /> */}
+      <Dog name={'Alice'} />
     </div>
   );
 }

@@ -1,7 +1,7 @@
 import { gql, useQuery } from '@apollo/client';
 import React from 'react';
 
-const GET_ALL_EMPLOYEES = gql`
+export const GET_ALL_EMPLOYEES = gql`
   query GetAllEmployees {
     getAllEmployees {
       id
@@ -11,7 +11,7 @@ const GET_ALL_EMPLOYEES = gql`
   }
 `;
 
-const Test = () => {
+const Employee = () => {
   const { data, loading } = useQuery(GET_ALL_EMPLOYEES);
 
   if (loading) {
@@ -28,4 +28,4 @@ const Test = () => {
   );
 };
 
-export default Test;
+export default Employee;
